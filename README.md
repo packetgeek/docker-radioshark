@@ -32,13 +32,13 @@ One you plug in the RadioShark, Pulseaudio should recognize it as an audio sourc
 
 Find the sink number by running:
 
-```c
+```text
 pactl list|grep "Sink \#" -A 3
 ```
 
 The output should look something like:
 
-```c
+```text
 root@desk:~# pactl list|grep "Sink \#" -A 3
 Sink #0
 	State: IDLE
@@ -60,13 +60,13 @@ In the above example, Sink #2 is connected to the sound bar on my desk.
 
 The source number can be determined by running:
 
-```c
+```text
 pactl list|grep "Sink \#" -A 3
 ```
 
 The output should look something like:
 
-```c
+```text
 root@desk:~# pactl list|grep "Source \#" -A 3
 Source #0
 	State: RUNNING
