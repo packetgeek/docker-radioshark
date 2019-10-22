@@ -24,7 +24,7 @@ $freq=$ARGV[0];
 system("sudo docker run --rm --privileged shark /shark-1.0/bin/linux/x86_64/shark -fm $freq");
 ```
 
-The above causes a temporary container to be created, and calls the binary with the desired frequency.  If you want to listen to AM radio, change the "-fm" to "-am".  If you want to control the blue LEDs, change "-fm" to "-blue" followed by a "1" or "0".  If you want to control the red LEDs, change the "-fm" to "-red", followed by a "1" or "0". Example: "-red 1".  Note: the LED calls can be run in the same command line as the "-fm" or "-am" calls.
+The above causes a temporary container to be created, calls the binary with the desired frequency, and then destroys the container.  If you want to listen to AM radio, change the "-fm" to "-am".  If you want to control the blue LEDs, change "-fm" to "-blue" followed by a "1" or "0".  If you want to control the red LEDs, change the "-fm" to "-red", followed by a "1" or "0". Example: "-red 1".  Note: the LED calls can be run in the same command line as the "-fm" or "-am" calls.
 
 ## Getting Pulseaudio to play the audio
 
