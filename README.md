@@ -90,7 +90,7 @@ In the above, the RadioShark is source #1.
 We can then configure Pulseaudio to recognize the RadioShark and pipe it's output to the soundbar by running:
 
 ```
-pactl load-module module-loopback source=0 sink=1
+pactl load-module module-loopback source=1 sink=2
 ```
 
 The above causes the proper controls to show up in the pavucontrol GUI.  I'll develop a more permanent solution in the future.
