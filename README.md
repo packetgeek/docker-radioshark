@@ -36,6 +36,8 @@ shark 98.7
 
 ## Getting Pulseaudio to connect the source to the sink
 
+Note: following are notes on manually configuring PulseAudio to recognize the RadioShark.  The "radio_config.pl" script (above) automates this process.
+
 One you plug in the RadioShark, Pulseaudio should recognize it as an audio source.  However, the GUI for PulseAudio doesn't always list it.  You can force the issue by determining the appropriate sink and source numbers for the devices.
 
 Find the sink number by running:
